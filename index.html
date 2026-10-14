@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chef's Studio</title>
+    <link rel="icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <a href="#" class="logo">Chef's Studio</a>
+        <nav>
+          <div class="menu">
+            <a href="#">쿠킹 클래스</a>
+            <a href="#">소개</a>
+            <a href="#">로그인</a>
+          </div>
+          <a href="#" class="search"
+            ><img src="images/search.svg" alt="search"
+          /></a>
+        </nav>
+        <nav class="mobile">
+          <img src="images/menu.svg" alt="menu" />
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="inner">
+        <div class="title-wrap">
+          <div class="title">
+            <h3>안녕하세요 🍳</h3>
+            <p>
+              최고의 요리 전문가와 함께 배우는 쿠킹 클래스를 지금 만나보세요
+            </p>
+          </div>
+          <button class="filter">
+            <img src="images/filter.png" alt="filter" />필터
+          </button>
+        </div>
+        <div class="card-wrap">
+          <div class="card">
+            <div class="img"><img src="images/img-7.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                이탈리아<img src="images/flag/Italy.png" alt="flag" />
+              </p>
+              <span
+                >이탈리아 셰프에게 직접<br />
+                배우는 파스타 요리</span
+              >
+              <p class="price">1인 35,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img-6.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                싱가포르<img src="images/flag/Singapore.png" alt="flag" />
+              </p>
+              <span
+                >도시 농장에서 재배한 재료로
+                <br />
+                맛보는 집밥
+              </span>
+              <p class="price">1인 28,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img-5.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                프랑스<img src="images/flag/France.png" alt="flag" />
+              </p>
+              <span
+                >초콜릿 트러플 마스터 클래스 +<br />
+                프랑스 와인</span
+              >
+              <p class="price">1인 30,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img-4.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                멕시코<img src="images/flag/Mexico.png" alt="flag" />
+              </p>
+              <span
+                >처음부터 끝까지 함께하는<br />
+                멕시코 요리</span
+              >
+              <p class="price">1인 35,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img-3.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                한국<img src="images/flag/Korea.png" alt="flag" />
+              </p>
+              <span
+                >제주도에서 온 달달한<br />
+                감귤 디저트</span
+              >
+              <p class="price">1인 23,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img-2.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                태국<img src="images/flag/Thailand.png" alt="flag" />
+              </p>
+              <span
+                >좀 더 가벼운 식사를 하고 싶은<br />
+                분들을 위해</span
+              >
+              <p class="price">1인 15,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img-1.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                덴마크<img src="images/flag/Denmark.png" alt="flag" />
+              </p>
+              <span>유럽식 아침 준비하기</span>
+              <p class="price">1인 18,000원</p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img"><img src="images/img.png" alt="food" /></div>
+            <div class="card-desc">
+              <p class="country">
+                미국<img src="images/flag/US.png" alt="flag" />
+              </p>
+              <span>조용한 농가에서 만들어보는 <br />유기농 파스타 </span>
+              <p class="price">1인 35,000원</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="pop-menu">
+        <a href="#">쿠킹 클래스</a>
+        <a href="#">소개</a>
+        <a href="#">로그인</a>
+      </div>
+    </main>
+  </body>
+  <script>
+    const mbNav = document.querySelector("nav.mobile");
+    const popMenu = document.querySelector(".pop-menu");
+    mbNav.addEventListener("click", function () {
+      popMenu.classList.toggle("on");
+      if (popMenu.classList.contains("on")) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    });
+  </script>
+</html>
