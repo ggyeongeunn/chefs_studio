@@ -6,6 +6,7 @@
     <title>Chef's Studio</title>
     <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/js.js"></script>
   </head>
   <body>
     <header>
@@ -20,10 +21,10 @@
           <a href="#" class="search"
             ><img src="images/search.svg" alt="search"
           /></a>
+          <img class="mobile" src="images/menu.svg" alt="menu" />
         </nav>
-        <nav class="mobile">
-          <img src="images/menu.svg" alt="menu" />
-        </nav>
+        <!-- <nav class="mobile">
+        </nav> -->
       </div>
     </header>
     <main>
@@ -148,16 +149,4 @@
       </div>
     </main>
   </body>
-  <script>
-    const mbNav = document.querySelector("nav.mobile");
-    const popMenu = document.querySelector(".pop-menu");
-    mbNav.addEventListener("click", function () {
-      popMenu.classList.toggle("on");
-      if (popMenu.classList.contains("on")) {
-        document.body.style.overflow = "hidden";
-      } else {
-        document.body.style.overflow = "auto";
-      }
-    });
-  </script>
 </html>
